@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta charset="utf-8" />
+<title>Bug Tracking Management</title>
+    <link rel="icon" href="static/images/favicon.ico" type="image/x-icon"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<!-- bootstrap & fontawesome -->
+
+<link href="static/css/font-awesome/4.5.0/css/font-awesome.min.css"  type="text/css" rel="stylesheet" />
+<link rel="stylesheet"  type="text/css" href="static/css/bootstrap.min.css">
+
+   <link href="static/css/bootstrap-datetimepicker.min.css"  type="text/css" rel="stylesheet" media="screen">
+  <link href="static/css/style_bug.css"  type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="static/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="static/js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+
+<style>
+.border_box{border:1px solid #000000;}
+.padding_box{padding:3px 3px 3px 3px;}
+.margin_left{margin-left:20px;}
+.content_inner{min-height: 637px !important;height:100%; padding:50px 50px 50px 50px;}
+.margin_panel{margin:20px 0px 20px 0px; }
+.panel_content{min-height: 500px !important;height:100%;}
+.panel-body{height:75px; word-wrap: break-word; white-space:inherit;}
+.bug_header{margin-top:2px;}
+</style>
+</head>
+
+
+
+
+<body >
+<div class="affix" style="width:100%;z-index:99;" >
+	<jsp:include page="commonJsp/Header.jsp" />
+	<div class="clearfix"></div>
+	<div class="breadcumb-wrapper">
+		<div class="clearfix">
+			<div class="pull-left">
+				<ul class="list-inline link-list">
+					<li><a href="#">Home</a></li>
+					<!--  <li>Question</li> -->
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	  <nav class="navbar bug_header head_color">
+
+</nav>
+	</div>
+
+<div class="container-fluid" style="padding-top:250px;min-height:738px;">
+
+
+
+<div class="content_inner">
+ <div class="container">
+ <div class="panel_content">
+<div class="row margin_panel">
+  <div class="col-lg-4">
+  <div class="panel panel-default">
+
+
+  </div>
+  </div>
+
+
+
+      <form class="form-signin" action="Physics" method="post">
+	 <button class="btn btn-lg btn-primary btn-block"  type="submit">Physics</button>
+	  </form>
+
+	 <form class="form-signin" action="Mathematics" method="post">
+		 <button class="btn btn-lg btn-primary btn-block"  type="submit">Mathematics</button>
+	 </form>
+
+	      <form class="form-signin" action="Chemistry" method="post">
+		 <button class="btn btn-lg btn-primary btn-block" type="submit">Chemistry</button>
+			  </form>
+	   <form class="form-signin" action="Computer" method="post">
+		 <button class="btn btn-lg btn-primary btn-block" type="submit">Computer_Programming</button>
+			  </form>
+	      <form class="form-signin" action="Chemistry" method="post">
+		    <button class="btn btn-lg btn-primary btn-block" type="submit">Environmental_Engineering</button>
+			  </form>
+
+
+
+
+
+
+</div>
+  </div>
+ </div>
+
+ 	</jsp:include page="commonJsp/Footer.jsp" />
+  <script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+
+
+
+
+
+</body>
+</html>

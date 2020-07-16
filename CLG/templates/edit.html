@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Subject</title>
+</head>
+<body>
+   <!-- Modal -->
+  <div class="modal fade " id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+
+          <h4>Bug Entry</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px; overflow-y:scroll;  max-height:500px;">
+         <form class="form-signin" action="update"   method="post" enctype="multipart/form-data">
+
+
+
+
+
+
+
+
+ <div class="form-group">
+	 Assigned To<sup>*</sup>
+ <select class="form-control" name="assignTo" id="nbassignId"  required >
+<option value="" selected>{{b1.Assigned_To}}</option>
+<option value="0" selected>Assigned To</option>
+	 {%for i in g%}
+
+	   <option value ="{{i.name}}" selected>{{i.name}}</option>
+
+	 {%endfor%}
+ </select> <br>
+
+
+            </div>
+
+
+
+            <!--  </div>
+         <div class="form-group">
+          Bug Name<sup>*</sup>
+	      <select class="form-control" name="bugName" id="bugName"  required >
+	      <option value="UI" selected>UI</option>
+	       <option value="" selected></option>
+          </select> <br>
+          </div> -->
+
+
+
+
+       	  <div class="form-group">
+            Bug Type
+			  <select class="form-control" Name="BugType" id="bugType" >
+				  <option value="">{{b1.Bug_Type}}</option>
+			  <option value="0">--Select One--</option>
+				  <option value="Functionality Error">Functionality Error</option>
+			  	  <option value="Communication Error">Communication Error</option>
+			  	  	  <option value="Missing Command">Missing Command</option>
+			  <option value="Syntactic Error">Syntactic Error</option>
+			  <option value="Error Handling Error">Error Handling Error</option>
+			<option value="Requirement">Requirement</option>
+			<option value="Suggestions">Suggestions</option>
+		      </select>
+          </div>
+           <div class="form-group">
+              Bug Severity
+			  <select class="form-control"  name="bugSeverity" id="bugSeverity" >
+			  <option value="">{{b1.Bug_Severity}}</option>
+			  <option value="0">--Select One--</option>
+
+			  <option value="Critical">Critical</option>
+			  <option value="Major">Major</option>
+			  <option value="Medium">Medium</option>
+			  <option value="low">Low</option>
+			  </select>
+            </div>
+            <div class="form-group">
+              Bug Status
+			  <select class="form-control"  name="bugStatus" id="bugStatus" >
+			    <option value="">{{b1.Bug_Status}}</option>
+				  <option value="0">--Select One--</option>\
+			  <option value="New">New</option>
+			  <option value="Open">Open</option>
+			  <option value="Reopen">Reopen</option>
+			  <option value="Close">Close</option>
+			  </select>
+            </div>
+
+
+
+
+		   <div class="form-group">
+	            <label for="Teacher's Name">Name</label> <br>
+
+		<textarea name="description"   rows="4" cols="72" style="resize:none">{{b1.Bug_Description}}
+		</textarea>
+		</div>
+
+
+
+
+
+
+			 </form>
+
+		</div>
+        <div class="modal-footer">
+          <button type="submit" class="btn  btn-default pull-left" data-dismiss="modal"> Cancel</button>
+
+        </div>
+</body>
+</html>

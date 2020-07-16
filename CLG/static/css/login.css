@@ -1,0 +1,152 @@
+
+body.login {
+  
+    background: url("../images/iima-cas-bg.jpg") no-repeat scroll center bottom;
+  
+    background-attachment: fixed ;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+
+.top-menu-bar {
+    width: 100%;
+    float: left;
+    background-color: #000080;
+	min-height: 50px;
+}
+.top-menu-bar ul{ list-style:none; float:right;}
+.top-menu-bar ul li{ display:inline-block; margin:10px}
+.bottom-nav-menu {
+   
+    background-color:rgba(255, 255, 255, 0.84);
+    margin-top: 0;
+    width: 100%;
+    float: left;height: 110px;position: relative;
+}
+#logo {
+    position: absolute;
+    top: -50px;
+    left: 40px;
+}
+.logo_hdr {
+    bottom: 10px;
+    color: #000080;
+    font-weight: bold;
+    left: 200px;
+    font-size: 22px;
+    position: absolute;
+}
+
+.login input[type=text], .login input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login button {
+    background-color: #2c75e3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login button:hover {
+    opacity: 0.8;
+}
+.login-inner {
+    padding: 20px;
+}
+
+.login .signup {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #2c75e3;
+}
+.login-footer {
+    padding: 0 20px;
+}
+
+
+.login span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.login-form {
+  background: none repeat scroll 0 0 #FFFFFF;
+border-radius: 3px;
+box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.5);
+float: left;
+
+
+margin-top: 45px;
+position: relative;
+ width:450px;
+
+	
+}
+
+.login-side-container  .panel-heading {
+    color: #fff;
+    background-color: #165e9c;
+    border-color: #165e9c;
+    border-radius: 3px 3px 0 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+.login-header {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #165e9c;
+    color: #fff;
+	border-radius: 3px 3px 0 0;
+	font-weight: 700;
+font-size: 28px;
+}
+
+
+.login-side-container {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.5);
+   float: right;
+   width:100%;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    position: relative;
+  min-height: 320px;
+	text-align: center;
+}
+.google-login {
+   width:100%;
+    float: right;
+}
+.google-login .btn{ width:100%;background-color: #f61912;
+border-color: #f61912;}
+.google-login .btn:hover{ background-color:#db1913;}
+.login-side-container .panel-body ul{ list-style:none; float:left;}
+.login-side-container .panel-body ul li{display: inline-block; width: 100%; text-align: left;  margin: 5px 0;}
+.login-side-container .panel-body ul li a{ font-size:20px; color:#004581; }
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}

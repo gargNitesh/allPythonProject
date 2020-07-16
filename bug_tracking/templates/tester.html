@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta charset="utf-8" />
+<title>Project Tracking Management</title>
+    <link rel="icon" href="static/images/favicon.ico" type="image/x-icon"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<!-- bootstrap & fontawesome -->
+
+<link href="static/css/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="static/css/bootstrap.min.css">
+
+  <link href="static/css/style_bug.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="static/css/dataTables.bootstrap.min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="static/css/buttons.dataTables.min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="static/css/jquery.dataTables.min.css" media="screen" />
+  <style>
+  #message{color:#fff;}
+#message:hover{color:#006780;}
+#dtable thead,
+#dtable thead,
+#dtable thead,
+#dtable thead {  background-color: #006780; color: #fff; }
+.bug_header{border-bottom:1px solid gray;}
+.button_margin{margin-left:100px !important;}
+
+</style>
+</head>
+{% extends "header.html" %}
+{% block body %}
+<body >
+<div class="affix" style="width:100%;" >
+	<jsp:include page="commonJsp/Header.jsp" />
+		<div class="clearfix"></div>
+		<div class="breadcumb-wrapper">
+			<div class="clearfix">
+				<div class="pull-left">
+					<ul class="list-inline link-list">
+						<li><a href="#">Home</a></li>
+
+							<li>Bug Reported by QA(TESTER)</li>
+						<span id="message1" style="color:red">{{msg}}</span>
+					</ul>
+				</div>
+
+			</div>
+		</div></div>
+
+
+
+
+   <div class="container-fluid" style="padding:210px 0px 100px 0px;min-height:738px;">
+
+
+
+	  <a class="btn btn-primary" href="/bug" id="myBtn" style="background: #006780;color:#fff; float:left; margin:10px 20px;">New Bug</a>
+
+
+
+
+
+
+    <table id="dtable" class="table table-bordered display nowrap" style="table-layout:fixed;">
+    <thead>
+      <tr>
+        <th><center>Bug ID</center></th>
+        	<th><center>Date</center></th>
+        <th><center>Project</center></th>
+		        <th><center>Module</center></th>
+		  <th><center>SubModule</center></th>
+		 <th><center>Bug Tittle</center> </th>
+		    <th><center>Bug Type</center></th>
+		    <th><center>Bug Severity</center></th>
+		     <th><center>Bug Status</center></th>
+		     <th><center>Bug Description</center></th>
+				  <th><center>Assign To</center></th>
+				     <th><center>Depends</center></th>
+					<th><center>Round</center></th>
+					<th><center>Issue</center></th>
+                     <th><center>Edit</center></th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in data %}
+
+	      <td>{{i.bug_id}}</td>
+	      <td>{{i.Date}}</td>
+             <td>{{i.Project_Name}}</td>
+			       <td>{{i.Modules}}</td>
+			       <td>{{i.Sub_Modules}}</td>
+			        <td>{{i.Bug_Title}}</td>
+				      <td>{{i.Bug_Type}}</td>
+				      <td>{{i.Bug_Severity}}</td>
+                       <td>{{i.Bug_Status}}</td>
+                       <td>{{i.Bug_Description}}</td>
+				          <td>{{i.Assigned_To}}</td>
+		                  <td>{{i.Depends}}</td>
+		                     <td>{{i.Round}}</td>
+
+		<td>
+			<form class="form-signin" action="Issue" method="POST">
+		<input type="hidden" class="form-control" name="bug_no" value={{i.bug_id}}>
+        <input type="hidden" class="form-control" name="date" value={{i.date}}>
+		<button class="btn btn-lg btn-primary btn-block" type="submit">Issue</button>
+            </form></td>
+          <td>
+            <form class="form-signin" action="edit" method="POST">
+		<input type="hidden" class="form-control" name="bug_no" value={{i.bug_id}}>
+		<button class="btn btn-lg btn-primary btn-block" type="submit">Edit</button>
+
+                	</form>
+		</td>
+		</tr>
+
+       {% endfor %}
+     </tbody>
+  </table>
+
+
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+
+
+});
+</script>
+<script type="text/javascript">
+
+$(document).on("click", "#edit", function () {
+    var bugno = $(this).data('bugno');
+
+
+
+    $("#projectId").val($(this).data('projectid'));
+    $("#ModueleId").val($(this).data('moduleid'));
+    $("confirm-box1${loop.count}").show();
+});
+
+
+<script type="text/javascript" src="static/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="static/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="static/js/buttons.flash.min.js"></script>
+<script type="text/javascript" src="static/js/jszip.min.js"></script>
+<script type="text/javascript" src="static/js/pdfmake.min.js"></script>
+<script type="text/javascript" src="static/js/vfs_fonts.js"></script>
+<script type="text/javascript" src="static/js/buttons.html5.min.js"></script>
+<script type="text/javascript" src="static/js/buttons.print.min.js"></script>
+
+<!-- <script>
+
+	  $(document).ready(function() {
+    $('#dtable').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'excel', 'pdf', 'print'
+        ]
+
+    } );
+} );
+</script> -->
+<script>
+function checkFileTypeForPhoto(id){
+	 var fileName=document.getElementById(id).value;
+	    var ext = $('#'+id).val().split('.').pop().toLowerCase();
+	    if($.inArray(ext, ['jpeg','jpg','png']) == -1) {
+	            alert("Only jpeg, jpg, png File are allowed to upload.")
+	            document.getElementById(id).value="";
+	    }else{
+
+	    }
+}
+</script>
+
+
+
+
+
+</body>
+
+
+{% endblock %}
+
+
+
+</html>

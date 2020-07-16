@@ -1,0 +1,765 @@
+
+body {
+    margin: 0px ;
+    padding: 0px ;
+   
+}
+
+.top-menu-bar {
+    width: 100%;
+    float: left;
+    
+	min-height: 50px;
+}
+.top-menu-bar ul{ list-style:none; float:right; padding-left:0;}
+.top-menu-bar ul li{ display:inline-block; margin:10px 5px;}
+.top-menu-bar ul li a{ color:#fff; padding: 0px 10px;}
+.bottom-nav-menu {   
+    background-color:rgba(255, 255, 255, 0.84);
+    margin-top: 0;
+    width: 100%;
+    float: left;height: 110px;position: relative;
+	background-image: url(../images/header-bg.jpg);
+}
+#logo {
+    position: absolute;
+    top: -56px;
+    left: 40px;
+}
+.logo_hdr {
+    bottom: 10px;
+    
+    font-weight: bold;
+    left: 200px;
+    font-size: 22px;
+    position: absolute;
+}
+
+
+.info-stats {
+    padding: 15px;
+}
+.info-stats.green-two .icon-type { width:100%; float:left; text-align:center; }
+
+.info-stats .sale-num {
+   width: 100%;
+text-align: center;
+}
+.info-stats .sale-num h4 {
+    font-size: 24px;
+   width: 100%;
+display: inline-block;
+    padding: 0;
+    line-height: 100%;
+    font-weight: 600;
+}
+.info-stats .sale-num p { 
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    color: #4d4d4d;
+}
+
+.table { margin-top: 6px; }
+.table > thead > tr > th,
+.table > tbody > tr > th, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > td{ vertical-align:middle; }
+.icon-type .fa.fa-user{ font-size:65px;}
+.left-bar{ margin-top: 6px ; margin-bottom: 16px;    background-color: #fff;    -webkit-border-radius: 3px;    -moz-border-radius: 3px;    border-radius: 3px;
+    -webkit-box-shadow: none;    box-shadow: none; border: 1px solid #c9d9ea;  }
+
+/*==================Menu CSS===============================*/
+.bottom-nav-menu .dropdown.open .dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 0;
+}
+.border {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.bottom-nav-menu .navbar-nav { margin: 35px 0 0; }
+
+.bottom-nav-menu #navbar {    margin-left: 0px; }
+
+.navbar, .dropdown-menu{ background:rgba(255,255,255,0.25); border: none; }
+
+.bottom-nav-menu .nav>li>a{   color: #006780; font-weight: 400; font-size: 16px; padding: 10px; }
+
+.bottom-nav-menu .navbar-default .navbar-nav > .active > a,
+.bottom-nav-menu .navbar-default .navbar-nav > .active > a:hover,
+.bottom-nav-menu .navbar-default .navbar-nav > .active > a:focus { background-color:#006780;transparent:none; }
+
+.nav>li>a:focus, .nav>li>a:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+  border-bottom: 1px dotted #fff;
+  background: none;
+}
+.bottom-nav-menu .navbar a, 
+.bottom-nav-menu .dropdown-menu>li>a,
+.bottom-nav-menu .navbar-toggle{
+ color: #fff;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+ color: #ddd;
+}
+
+.bottom-nav-menu .dropdown-menu{
+      -webkit-box-shadow: none;
+    box-shadow:none;
+	background-color: #006780;
+}
+
+.bottom-nav-menu .navbar .navbar-nav > .open > a,
+.bottom-nav-menu .navbar.navbar-nav > .open > a:hover, 
+.bottom-nav-menu .navbar .navbar-nav > .open > a:focus {
+    background-color: #f7f7f7;
+    color: #006780;
+  
+}
+.bottom-nav-menu .dropdown-menu > li > a { border-bottom: 1px dotted #fff; }
+
+.bottom-nav-menu .dropdown-menu > li:last-child > a { border-bottom: none;} 
+
+.navbar-toggle .icon-bar{
+    color: #fff;
+    background: #fff;
+}
+
+.btn-blue {
+    color: #fff;
+   background-color: #000080;
+
+}
+
+
+button.btn.btn-blue:hover{ color:#fff; background-color:#4141b3; border-color: #4141b3;}
+
+.panel.panel-default.add-forum {
+    margin-top: 30px;
+}
+
+.panel.panel-default.add-forum  .panel-heading{color: #fff;
+background-color: #000080;
+font-weight: 600;
+text-align: center;
+font-size: 22px;
+text-transform: uppercase;}
+
+header {   float: left;   width: 100%; }
+
+#main-fourum thead,
+#main-fourum2 thead,
+#main-fourum3 thead,
+#main-fourum4 thead,
+#verify-application thead {  background-color: #428bca; color: #fff; }
+
+.breadcumb-wrapper { padding: 8px;  background-color:#006780 !important;}
+
+.breadcumb-wrapper ul li a,
+.breadcumb-wrapper ul li{ color:#fff;}
+
+.main-forum-box .row{ margin:10px 0;}
+
+.btn-container {   margin: 10px 0;   padding: 0; }
+
+.btn-container .btn{ margin:0 5px;}
+.breadcumb-wrapper ul.list-inline{ margin-bottom:0;}
+.breadcumb-wrapper ul.link-list li a::after {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    margin: 0 10px;
+}
+
+
+.modal-dialog.company-model-box {   width: 75%; }
+.company-model-withdraw{ width:300px;}
+.modal-dialog.company-model-box .modal-body,
+.company-model-withdraw .modal-body { padding: 10px; }
+  
+ .modal-dialog.company-model-box .modal-header,
+ .company-model-withdraw .modal-header {padding: 5px 10px;  
+    background-color: #000080;
+    color: #fff; border-radius: 3px 3px 0 0;
+}
+
+ .modal-dialog.company-model-box .model-title{ font-weight:700;margin-bottom: 10px;}
+ .modal-dialog.company-model-box  .mb-10{ margin-bottom:10px;}
+ 
+ .modal-dialog.company-model-box .modal-footer,
+ .company-model-withdraw .modal-footer { margin-top: 0px; padding: 10px 0px;}
+ 
+ 
+ .modal-dialog.company-model-box .close {color: #fff; opacity: 1;}
+
+  .modal-dialog  .modal-body hr{ margin:10px 0;}
+
+.modal-dialog.comp-info.company-model-withdraw {
+    width: 500px;
+}
+/*==================Footer CSS===============================*/
+
+
+footer{background: #000080; width:100%; float:left;	box-sizing: border-box;}
+
+footer .pre-footer { background: #000080; color: #ffffff; float: left; width: 100%; }
+
+.pre-footer .footer-columns {
+    margin: 0;
+    padding: 0;
+    padding: 15px 10px;
+}
+.pre-footer .footer-columns .links-wrapper > li {
+    margin-bottom: 10px;
+}
+.pre-footer ul {
+    margin: 0;
+    padding: 0;
+}
+.pre-footer .footer-columns .footer-column:first-child {
+    padding-left: 0;
+    border: 0;
+}
+.pre-footer .footer-columns .footer-column {
+    width: 20%;
+    display: block;
+    float: left;
+    padding-left: 10px;
+    border-left: 1px solid #c5c5c5;
+}
+.pre-footer li {
+    list-style: none;
+}
+
+.pre-footer a:hover {
+    color: #fff;
+}
+ .pre-footer a {
+    color: #ffffff;
+   
+}
+.column-heading {
+   
+    color: #FFF;
+    font-size: 16px;
+}
+footer .footer {
+    border-top: 1px solid #c5c5c5;
+    padding: 6px 10px;
+	width: 100%;
+float: left;
+min-height: 55px;
+}
+ 
+.copyright-info { float: left;  padding: 0 ; color:#ffffff; }
+footer ul {
+    list-style: none;
+    padding-left: 0px;
+}
+footer .copyright-info li:first-child {
+    padding-left: 0;
+    border: 0;
+}
+footer .copyright-info li {
+    padding: 0 10px;
+    border-left: 1px solid #c5c5c5;
+	float: left;
+}
+
+footer .copyright-info li a {
+    color: #c5c5c5;
+}
+footer .social-icons {
+    float: right;
+}
+footer .social-icons a {
+    color: #c5c5c5;
+    font-size: 31px;
+    margin-left: 5px;
+    line-height: normal !important;
+}
+
+/*=================Mail Inbox CSS=====================*/
+
+
+
+    .mail-box {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.mail-box aside {
+    display: table-cell;
+    float: none;
+    height: 100%;
+    padding: 0;
+    vertical-align: top;
+}
+.mail-box .sm-side {
+    background: none repeat scroll 0 0 #e5e8ef;
+   
+    width: 20%;
+}
+.mail-box .lg-side {
+    background: none repeat scroll 0 0 #fff;
+   
+    width: 80%;
+}
+.mail-box .sm-side .user-head {
+    background: none repeat scroll 0 0 #9696ff;
+  
+    color: #fff;
+    min-height: 40px;
+    padding: 10px;
+}
+.mail-box .user-head .inbox-avatar {
+    float: left;
+    width: 65px;
+}
+.mail-box .user-head .inbox-avatar img {
+    border-radius: 4px;
+}
+.mail-box .user-head .user-name {
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+.mail-box .user-head .user-name h5 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.mail-box .user-head .user-name h5 a {
+    color: #fff;
+}
+.mail-box .user-head .user-name span a {
+    color: #87e2e7;
+    font-size: 12px;
+}
+.mail-box a.mail-dropdown {
+    background: none repeat scroll 0 0 #80d3d9;
+    border-radius: 2px;
+    color: #01a7b3;
+    font-size: 10px;
+    margin-top: 20px;
+    padding: 3px 5px;
+}
+.mail-box .inbox-body {
+    padding: 20px;
+}
+.mail-box .btn-compose {
+   /* background: none repeat scroll 0 0 #ff6c60;*/
+    color: #fff;
+    padding: 12px 0;
+    text-align: center;
+    width: 100%;
+}
+.mail-box .btn-compose:hover {
+  /*  background: none repeat scroll 0 0 #f5675c;*/
+    color: #fff;
+}
+.mail-box ul.inbox-nav {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.mail-box .inbox-divider {
+    border-bottom: 1px solid #d5d8df;
+}
+.mail-box ul.inbox-nav li {
+    display: inline-block;
+    line-height: 45px;
+    width: 100%;
+}
+.mail-box ul.inbox-nav li a {
+    color: #6a6a6a;
+    display: inline-block;
+    line-height: 45px;
+    padding: 0 20px;
+    width: 100%;
+}
+.mail-box ul.inbox-nav li a:hover, .mail-box ul.inbox-nav li.active a, .mail-box ul.inbox-nav li a:focus {
+    background: none repeat scroll 0 0 #d5d7de;
+    color: #6a6a6a;
+}
+.mail-box ul.inbox-nav li a i {
+    color: #6a6a6a;
+    font-size: 16px;
+    padding-right: 10px;
+}
+.mail-box ul.inbox-nav li a span.label {    margin-top: 13px; }
+
+.mail-box ul.labels-info li h4 {    color: #5c5c5e;    font-size: 13px;padding-left: 15px; padding-right: 15px; padding-top: 5px;text-transform: uppercase;}
+.mail-box ul.labels-info li {
+    margin: 0;
+}
+.mail-box ul.labels-info li a {
+    border-radius: 0;
+    color: #6a6a6a;
+}
+.mail-box ul.labels-info li a:hover, .mail-box ul.labels-info li a:focus {
+    background: none repeat scroll 0 0 #d5d7de;
+    color: #6a6a6a;
+}
+.mail-box ul.labels-info li a i {
+    padding-right: 10px;
+}
+.mail-box .nav.nav-pills.nav-stacked.labels-info p {
+    color: #9d9f9e;
+    font-size: 11px;
+    margin-bottom: 0;
+    padding: 0 22px;
+}
+.mail-box .inbox-head {
+   background: none repeat scroll 0 0 #9696ff;
+color: #fff;
+min-height: 40px;
+padding: 6px;
+border-left: 1px solid #ccc;
+}
+.mail-box .inbox-head h3 {
+    display: inline-block;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 0px;
+}
+.mail-box .inbox-head .sr-input {
+    border: medium none;
+    border-radius: 4px 0 0 4px;
+    box-shadow: none;
+    color: #8a8a8a;
+    float: left;
+    height: 28px;
+    padding: 0 10px;
+}
+.mail-box .inbox-head .sr-btn {
+    background:none repeat scroll 0 0 #000080;
+    border: medium none;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+   height: 28px;
+padding: 0 10px;
+}
+.mail-box .table-inbox {
+    border: 1px solid #d3d3d3;
+    margin-bottom: 0;
+}
+.mail-box .table-inbox tr td {
+    padding: 12px !important;
+}
+.mail-box .table-inbox tr td:hover {
+    cursor: pointer;
+}
+.mail-box .table-inbox tr td .fa-star.inbox-started, .mail-box .table-inbox tr td .fa-star:hover {
+    color: #f78a09;
+}
+.mail-box .table-inbox tr td .fa-star {
+    color: #d5d5d5;
+}
+.mail-box .table-inbox tr.unread td {
+    background: none repeat scroll 0 0 #f7f7f7;
+    font-weight: 600;
+}
+ .mail-box ul.inbox-pagination {
+    float: right;
+}
+.mail-box ul.inbox-pagination li {
+    float: left;
+}
+.mail-box .mail-option {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.mail-box .mail-option .chk-all, .mail-box .mail-option .btn-group {
+    margin-right: 5px;
+}
+.mail-box .mail-option .chk-all , .mail-box .mail-option .btn-group a.btn {
+    background: none repeat scroll 0 0 #fcfcfc;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px !important;
+    color: #afafaf;
+    display: inline-block;
+    padding: 5px 10px;
+}
+.mail-box .inbox-pagination a.np-btn {
+    background: none repeat scroll 0 0 #fcfcfc;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px !important;
+    color: #afafaf;
+    display: inline-block;
+    padding: 5px 15px;
+}
+.mail-box .mail-option .chk-all input[type="checkbox"] {
+    margin-top: 0;
+}
+.mail-box .mail-option .btn-group a.all {
+    border: medium none;
+    padding: 0;
+}
+.mail-box .inbox-pagination a.np-btn {
+    margin-left: 5px;
+}
+.mail-box .inbox-pagination li span {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 7px;
+}
+.mail-box .fileinput-button {
+   background: none repeat scroll 0 0 #abbac3;
+border: 1px solid #e6e6e6;
+padding: 10px 15px;
+}
+.mail-box .inbox-body .modal .modal-body input, .mail-box .inbox-body .modal .modal-body textarea {
+    border: 1px solid #e6e6e6;
+    box-shadow: none;
+}
+.mail-box .btn-send, .mail-box .btn-send:hover {
+   
+    color: #fff;
+}
+.mail-box .btn-send:hover {
+    
+}
+.mail-box .modal-header h4.modal-title {
+    font-family: "Open Sans",sans-serif;
+    font-weight: 300;
+}
+.mail-box .modal-body label {
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+}
+.mail-box .heading-inbox h4 {
+    border-bottom: 1px solid #ddd;
+    color: #444;
+    font-size: 18px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.mail-box .sender-info {
+    margin-bottom: 20px;
+}
+.mail-box .sender-info img {
+    height: 30px;
+    width: 30px;
+}
+.mail-box .sender-dropdown {
+    background: none repeat scroll 0 0 #eaeaea;
+    color: #777;
+    font-size: 10px;
+    padding: 0 3px;
+}
+.mail-box .view-mail a {
+    color: #ff6c60;
+}
+.mail-box .attachment-mail {
+    margin-top: 30px;
+}
+.mail-box .attachment-mail ul {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.mail-box .attachment-mail ul li {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 150px;
+}
+.mail-box .attachment-mail ul li img {
+    width: 100%;
+}
+.mail-box .attachment-mail ul li span {
+    float: right;
+}
+.mail-box .attachment-mail .file-name {
+    float: left;
+}
+.mail-box .attachment-mail .links {
+    display: inline-block;
+    width: 100%;
+}
+
+.mail-box .fileinput-button {
+    float: left;
+    margin-right: 4px;
+    overflow: hidden;
+    position: relative;
+}
+.mail-box .fileinput-button input {
+    cursor: pointer;
+    direction: ltr;
+    font-size: 23px;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-300px, 0px) scale(4);
+}
+.mail-box .fileupload-buttonbar .btn, .mail-box .fileupload-buttonbar .toggle {
+    margin-bottom: 5px;
+}
+.mail-box .files .progress {
+    width: 200px;
+}
+.mail-box .fileupload-processing .fileupload-loading {
+    display: block;
+}
+* html .fileinput-button {
+    line-height: 24px;
+    margin: 1px -3px 0 0;
+}
+* + html .fileinput-button {
+    margin: 1px 0 0;
+    padding: 2px 15px;
+}
+@media (max-width: 767px) {
+.mail-box .files .btn span {
+    display: none;
+}
+.mail-box .files .preview * {
+    width: 40px;
+}
+.mail-box .files .name * {
+    display: inline-block;
+    width: 80px;
+    word-wrap: break-word;
+}
+.mail-box .files .progress {
+    width: 20px;
+}
+.mail-box .files .delete {
+    width: 60px;
+}
+}
+.mail-box ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.mail-box .navbar, .mail-box .dropdown-menu {  background: rgb(255, 255, 255);  border: none; }
+.mail-box #create-label .form-horizontal .control-label{ text-align:left;}
+
+.mail-box #create-label .form-horizontal .form-group .control-label{ line-height:30px;}
+.mail-box #create-label .form-horizontal .form-group{ margin-bottom:0;}
+.mail-box #create-label .modal-body { padding: 0px 10px 10px; }
+.space {
+    width: 100%;
+    float: left;
+    margin: 20px 0;
+    display: block;
+}
+.modal-body .row{ margin-bottom:10px;}
+
+
+.closed-status .nav-sidebar { 
+    width: 100%;
+    margin: 30px 0; 
+    border-right: 1px solid #ddd;
+}
+.closed-status .nav-sidebar a {
+    color: #333;
+    -webkit-transition: all 0.08s linear;
+    -moz-transition: all 0.08s linear;
+    -o-transition: all 0.08s linear;
+    transition: all 0.08s linear;
+}
+.closed-status .nav-sidebar .active a { 
+    cursor: default;
+    background-color: #0b56a8; 
+    color: #fff; 
+}
+.closed-status .nav-sidebar .active a:hover {
+    background-color: #E50000;   
+}
+.closed-status .nav-sidebar .text-overflow a,
+.closed-status .nav-sidebar .text-overflow .media-body {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; 
+}
+
+.closed-status .btn-blog {
+    color: #ffffff;
+    background-color: #E50000;
+    border-color: #E50000;
+    border-radius:0;
+    margin-bottom:10px
+}
+ .margin10{margin-bottom:10px; margin-right:10px;}
+ 
+ .modal-footer { margin-top: 5px; padding: 5px 20px 5px;}
+.modal-header { padding: 5px 10px; }
+
+.min-height {
+    min-height: 650px;
+}
+
+.bootstrap-datetimepicker-widget{ background-color:#fff;}
+#showStudent,
+#showByPrefix {
+    height: 165px;
+    overflow-y: scroll;
+}
+
+.stepwizard-step p {
+	margin-top: 10px;
+}
+.stepwizard-row {
+	display: table-row;
+}
+.stepwizard {
+	display: table;
+	width: 100%;
+	position: relative;
+}
+.stepwizard-step button[disabled] {
+	opacity: 1 !important;
+	filter: alpha(opacity=100) !important;
+}
+.stepwizard-row:before {
+	top: 22px;
+bottom: 0;
+position: absolute;
+content: " ";
+width: 93%;
+height: 3px;
+background-color: #ccc;
+z-index: 0;
+left: 35px;
+}
+.stepwizard-step {
+	display: table-cell;
+	text-align: center;
+	position: relative;
+}
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn { opacity: 1; }
+.btn-circle {
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	padding: 6px 0;
+	font-size: 12px;
+	line-height: 22px;
+	border-radius: 45px;
+}
+
+.form-group { width: 100%;  float: left; }
+   .datepicker{    background-color: #fff;    padding: 10px; }     
+        
+.navbar-inverse .navbar-nav>li>a:hover{ background:none !important;}
+

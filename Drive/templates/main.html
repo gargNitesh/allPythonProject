@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>main</title>
+</head>
+<body>
+<form action="logout" method="post">
+ <left>
+        <button type="logout">Logout</button>
+
+ </left>
+</form>
+<center>
+
+
+<h1>Upload File</h1>
+
+<form id="uploaf_form" action="upload" method="post" enctype=multipart/form-data>
+      <input type="hidden" name="email" value="{{data}}">
+      <select name="Select_folder">
+        Select Folder :-
+      {% for i in data1 %}
+      <option value="{{i}}">{{i}}</option>
+      {% endfor %}
+       </select>
+      <input type="file" name="file" type="image" multiple><br><br>
+      <input type="submit" value="Upload"><br><br>
+      <font color="red"> {{ error }} </font><br><br>
+
+
+</form>
+ <form action="add_folder" >
+     <input type="hidden" name="email" value="{{data}}">
+      <input type="text" name="user_crt"><br><br>
+      <button type="submit">
+							ADD_FOLDER
+     </button>
+     <br>
+     <font color="red"> {{ error1 }} </font><br><br>
+ </form>
+     Folder alrady exist are :-<br>
+      {% for i in data1 %}
+      * {{i}}
+     <form action="Del_Folder" method="post">
+         <input type="hidden" name="email" value="{{data}}">
+         <input type="hidden" name="ID" value="{{i.ID}}">
+
+         <button type="submit"> Delete Folder </button>
+     </form>
+      {% endfor %}
+
+
+
+</center>
+</body>
+</html>
